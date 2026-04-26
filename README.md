@@ -1,4 +1,4 @@
-# BlockBlog — iOS-Style Decentralized Blockchain Blog
+# BlockBlog —  Decentralized Blockchain Blog
 
 > Major Project: *A Secure and Transparent Decentralized Blogging System Leveraging Blockchain Technology*
 
