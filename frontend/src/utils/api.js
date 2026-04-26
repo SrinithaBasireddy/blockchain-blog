@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://blockchain-blog-production.up.railway.app/api" });
-
+const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api" });
 API.interceptors.request.use((cfg) => {
   const u = JSON.parse(localStorage.getItem("bb_user") || "{}");
   if (u.token) cfg.headers.Authorization = `Bearer ${u.token}`;
