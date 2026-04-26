@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "/api" });
+const API = axios.create({ baseURL: "https://blockchain-blog-production.up.railway.app/api" });
 
 API.interceptors.request.use((cfg) => {
   const u = JSON.parse(localStorage.getItem("bb_user") || "{}");
